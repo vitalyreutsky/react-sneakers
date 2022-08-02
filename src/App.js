@@ -4,9 +4,9 @@ function App() {
       <div className="container">
         <div className="wrapper clear">
           <div className="drawer">
-            <div className="drawer__block">
-              <h2 className="drawer__title">Корзина</h2>
-              <div className="drawer__close">
+            <div className="drawerBlock">
+              <h2 className="drawerTitle">Корзина</h2>
+              <div className="drawerClose">
                 <img
                   width={15}
                   height={15}
@@ -15,9 +15,9 @@ function App() {
                 />
               </div>
 
-              <div className="drawer__carts cart__items">
-                <div className="drawer__item cart">
-                  <div className="cart__img">
+              <div className="drawerCarts cartItems">
+                <div className="drawerItem cart">
+                  <div className="cartImg">
                     <img
                       width={70}
                       height={70}
@@ -25,41 +25,15 @@ function App() {
                       alt="Sneaker1"
                     />
                   </div>
-                  <div className="cart__info">
-                    <h5 className="cart__title">
+                  <div className="cartInfo">
+                    <h5 className="cartTitle">
                       Мужские Кроссовки Nike Air Max 270
                     </h5>
-                    <span className="cart__price cart__price-sum">
-                      200 <span className="cart__price-val">$</span>
+                    <span className="cartPrice cartPrice-sum">
+                      200 <span className="cartPriceVal">$</span>
                     </span>
                   </div>
-                  <div className="cart__close-icon">
-                    <img
-                      width={15}
-                      height={15}
-                      src="/react-sneakers/img/close.svg"
-                      alt="Close"
-                    />
-                  </div>
-                </div>
-                <div className="drawer__item cart">
-                  <div className="cart__img">
-                    <img
-                      width={70}
-                      height={70}
-                      src="/react-sneakers/img/sneakers/1.jpg"
-                      alt="Sneaker1"
-                    />
-                  </div>
-                  <div className="cart__info">
-                    <h5 className="cart__title">
-                      Мужские Кроссовки Nike Air Max 270
-                    </h5>
-                    <span className="cart__price cart__price-sum">
-                      200 <span className="cart__price-val">$</span>
-                    </span>
-                  </div>
-                  <div className="cart__close-icon">
+                  <div className="cartCloseIcon">
                     <img
                       width={15}
                       height={15}
@@ -70,25 +44,25 @@ function App() {
                 </div>
               </div>
 
-              <div className="drawer__bottom cart__bottom">
-                <ul className="cart__list list-reset">
-                  <li className="cart__list-item">
-                    <h5 className="cart__list-title">Итого:</h5>
+              <div className="drawerBottom cartBottom">
+                <ul className="cartList listReset">
+                  <li className="cartListItem">
+                    <h5 className="cartListTitle">Итого:</h5>
                     <div></div>
-                    <span className="cart__list-sum">
-                      200 <span className="cart__list-val">$</span>
+                    <span className="cartListSum">
+                      200 <span className="cartListVal">$</span>
                     </span>
                   </li>
 
-                  <li className="cart__list-item">
-                    <h5 className="cart__list-title">Налог:</h5>
+                  <li className="cartListItem">
+                    <h5 className="cartListTitle">Налог:</h5>
                     <div></div>
-                    <span className="cart__list-sum">
-                      5 <span className="cart__list-val">%</span>
+                    <span className="cartListSum">
+                      5 <span className="cartListVal">%</span>
                     </span>
                   </li>
                 </ul>
-                <button className="btn cart__btn">
+                <button className="btn cartBtn">
                   Оформить заказ
                   <img src="/react-sneakers/img/arr.svg" alt="Arrow" />
                 </button>
@@ -108,19 +82,19 @@ function App() {
                 <p>Магазин кроссовок</p>
               </div>
             </div>
-            <ul className="header__right list list-reset">
-              <li className="list__item list__item-cart">
+            <ul className="headerRight list listReset">
+              <li className="listItem listItemCart">
                 <img
                   width={18}
                   height={18}
                   src="/react-sneakers/img/cart.svg"
                   alt="Cart"
                 />
-                <span className="list__item-sum">
-                  1000 <span className="list__item-val">$</span>
+                <span className="listItemSum">
+                  1000 <span className="listItemVal">$</span>
                 </span>
               </li>
-              <li className="list__item">
+              <li className="listItem">
                 <img
                   width={18}
                   height={18}
@@ -128,7 +102,7 @@ function App() {
                   alt="like"
                 />
               </li>
-              <li className="list__item">
+              <li className="listItem">
                 <img
                   width={18}
                   height={18}
@@ -139,41 +113,41 @@ function App() {
             </ul>
           </header>
           <div className="content">
-            <div className="content__info">
-              <h1 className="content__title">Все кроссовки</h1>
-              <div className="content__search search">
+            <div className="contentInfo">
+              <h1 className="contentTitle">Все кроссовки</h1>
+              <div className="contentSearch search">
                 <img src="/react-sneakers/img/search.svg" alt="Search" />
                 <input type="text" placeholder="Поиск..." />
               </div>
             </div>
 
-            <div className="content__cards">
-              <div className="content__card card">
+            <div className="contentCards">
+              <div className="contentCard card">
                 <img
-                  className="card__img-b-like"
+                  className="cardimgblike"
                   width={20}
                   height={20}
                   src="/react-sneakers/img/like.svg"
                   alt="Like"
                 />
                 <img
-                  className="card__img"
+                  className="cardimg"
                   width={133}
                   height={112}
                   src="/react-sneakers/img/sneakers/1.jpg"
                   alt="Sneaker1"
                 />
-                <p className="card__descr">
+                <p className="cardDescr">
                   Мужские Кроссовки Nike Blazer Mid Suede
                 </p>
-                <div className="card__bottom">
-                  <div className="card__price">
-                    <span className="list__item-price">Цена:</span>
-                    <span className="list__item-sum">
-                      200 <span className="list__item-val">$</span>
+                <div className="cardBottom">
+                  <div className="cardPrice">
+                    <span className="listItemPrice">Цена:</span>
+                    <span className="listItemSum">
+                      200 <span className="listItemVal">$</span>
                     </span>
                   </div>
-                  <button className="card__btn">
+                  <button className="cardBtn">
                     <img
                       width={15}
                       height={15}
