@@ -87,7 +87,7 @@ svg {
 .header {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: 1px solid var(--main-bg);
 }
@@ -116,6 +116,9 @@ svg {
 .listItem {
   display: flex;
   align-items: center;
+  img {
+    cursor: pointer;
+  }
 }
 
 .listItemCart {
@@ -280,7 +283,8 @@ svg {
     transform: translateY(-5px);
   }
 }
-.cardImgBLike {
+
+.cardImgBlike {
   cursor: pointer;
 }
 .cardImg {
